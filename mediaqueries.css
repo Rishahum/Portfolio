@@ -1,103 +1,85 @@
-@media screen and (max-width: 1400px) {
-  #profile {
-    height: 83vh;
-    margin-bottom: 6rem;
-  }
-  .about-containers {
-    flex-wrap: wrap;
-  }
-  #contact,
-  #projects {
-    height: fit-content;
-  }
+/* ====== DARK MODE SUPPORT ====== */
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
 }
 
-@media screen and (max-width: 1200px) {
-  #desktop-nav {
-    display: none;
-  }
-  #hamburger-nav {
-    display: flex;
-  }
-  #experience,
-  .experience-details-container {
-    margin-top: 2rem;
-  }
-  #profile,
-  .section-container {
-    display: block;
-  }
-  .arrow {
-    display: none;
-  }
-  section,
-  .section-container {
-    height: fit-content;
-  }
-  section {
-    margin: 0 5%;
-  }
-  .section__pic-container {
-    width: 275px;
-    height: 275px;
-    margin: 0 auto 2rem;
-  }
-  .about-containers {
-    margin-top: 0;
-  }
+body.dark-mode a {
+  color: #bb86fc;
+}
+body.dark-mode .btn-color-2{
+  background-color: #20b320 !important;
+  border:  1px solid #20b320 !important;
+}
+body.dark-mode .nav-links >li >a{
+  color:#9ff79f !important;
+}
+body.dark-mode .nav-links li a,
+body.dark-mode .logo,
+body.dark-mode .experience-sub-title,
+body.dark-mode .section__text__p2,
+body.dark-mode .title,
+body.dark-mode .information,
+body.dark-mode .btn-color-1 {
+  color: #ffffff;
+}
+body.dark-mode .btn-color-1{
+  background-color: #9ff79f;
+  
 }
 
-@media screen and (max-width: 600px) {
-  #contact,
-  footer {
-    height: 40vh;
-  }
-  #profile {
-    height: 83vh;
-    margin-bottom: 0;
-  }
-  article {
-    font-size: 1rem;
-  }
-  footer nav {
-    height: fit-content;
-    margin-bottom: 2rem;
-  }
-  .about-containers,
-  .contact-info-upper-container,
-  .btn-container {
-    flex-wrap: wrap;
-  }
-  .contact-info-container {
-    margin: 0;
-  }
-  .contact-info-container p,
-  .nav-links li a {
-    font-size: 1rem;
-  }
-  .experience-sub-title {
-    font-size: 1.25rem;
-  }
-  .logo {
-    font-size: 1.5rem;
-  }
-  .nav-links {
-    flex-direction: column;
-    gap: 0.5rem;
-    text-align: center;
-  }
-  .section__pic-container {
-    width: auto;
-    height: 46vw;
-    justify-content: center;
-  }
-  .section__text__p2 {
-    font-size: 1.25rem;
-  }
-  .title {
-    font-size: 2rem;
-  }
-  .text-container {
-    text-align: justify;
-  }
+body.dark-mode .section__text__p1{
+   color: #636563;
+}
+
+
+body.dark-mode .btn {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+body.dark-mode .btn:hover {
+  background-color: #444;
+}
+
+body.dark-mode .github_icon{
+  display: none;
+  
+}
+body.dark-mode .github_dark_icon{
+  display: flex;
+  height: 3rem;
+}
+
+body.dark-mode .linkedin{
+  display: none;
+}
+
+body.dark-mode .linkedin_dark{
+  display: flex;
+  height: 3rem;
+}
+body.dark-mode .mail{
+  color: white;
+}
+body.dark-mode .linkedin_string{
+  color: white;
+}
+body.dark-mode .details-container >p{
+  color: rgb(202, 202, 202);
+}
+body.dark-mode .details-container,
+body.dark-mode .color-container {
+  background-color: #1e1e1e;
+  border: 1px solid #444;
+}
+
+body.dark-mode footer {
+  background-color: #181818;
+}
+
+body.dark-mode #hamburger-nav,
+body.dark-mode #desktop-nav {
+  background-color: #1c1c1c;
 }

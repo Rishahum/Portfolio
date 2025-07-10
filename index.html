@@ -13,11 +13,14 @@
       <div class="logo">Risha Sinha</div>
       <div>
         <ul class="nav-links">
-          <li><a href="#about">About/Experience</a></li>
+          <li><a href="#about">Experience</a></li>
           <li><a href="#experience">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
+      </div>
+      <div>
+        <button id="theme-toggle" class="btn btn-color-1">🌙 Dark Mode</button>
       </div>
     </nav>
     <nav id="hamburger-nav">
@@ -29,7 +32,7 @@
           <span></span>
         </div>
         <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About/Experience</a></li>
+          <li><a href="#about" onclick="toggleMenu()">Experience</a></li>
           <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
@@ -37,13 +40,14 @@
       </div>
     </nav>
     <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/photo.jpeg" alt="John Doe profile picture" />
-      </div>
       <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Risha Sinha</h1>
-        <p class="section__text__p2">FullStack Developer</p>
+        <p class="section__text__p1">Hi, I'm</p>
+        <h1 class="section__text__p2">Risha Sinha</h1>
+        <p class="information" >I like to craft solid and scalable products with great user experience.
+        I’m a passionate and curious developer who thrives on continuous learning and growth. I enjoy diving into new technologies, solving challenges, and constantly improving my skills.
+        I believe in writing clean, thoughtful code and collaborating effectively to build meaningful solutions.
+        Always eager to learn, open to feedback, and driven by a genuine love for technology and problem-solving.
+        </p>
         <div class="btn-container">
           <button
             class="btn btn-color-2"
@@ -59,15 +63,29 @@
           <img
             src="./assets/linkedin.png"
             alt="My LinkedIn profile"
-            class="icon"
+            class="linkedin"
             onclick="location.href='https://www.linkedin.com/in/risha-sinha-782538221/'"
           />
           <img
+            src="./assets/linkedindark.png"
+            alt="My LinkedIn profile"
+            class="linkedin_dark"
+            onclick="location.href='https://www.linkedin.com/in/risha-sinha-782538221/'"
+          />
+          
+          <img
             src="./assets/github.png"
             alt="My Github profile"
-            class="icon"
+            class="github_icon"
             onclick="location.href='https://github.com/Rishahum'"
           />
+          <img
+            src="./assets/githubdark.png"
+            alt="My Github profile"
+            class="github_dark_icon"
+            onclick="location.href='https://github.com/Rishahum'"
+          />
+          
         </div>
       </div>
     </section>
@@ -75,13 +93,7 @@
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
       <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/front-end-developer.jpg"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
+
         <div class="about-details-container">
           <div class="about-containers">
             <div class="details-container">
@@ -93,6 +105,15 @@
               <h3>Experience</h3>
               <p>Junior Software Developer</p><p>ADNECTO TECHNOLOGY</p>
             </div>
+             <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>Software Developer</p><p>EXECUTIVE SOLUTIONS</p>
+            </div>
             <div class="details-container">
               <img
                 src="./assets/education.png"
@@ -100,15 +121,9 @@
                 class="icon"
               />
               <h3>Education</h3>
-              <p>B.C.A Bachelors of Computer Application<br />doing Master's of Computer Application</p>
+              <p>Bachelors of Computer Application<br /> Master's of Computer Application(pursuing) </p>
             </div>
-          </div>
-          <div class="text-container">
-            <p>
-             Hello, I am Risha Sinha.Currently, I am engaged in Adnecto Technology as Junior Software Enginner.
-             I am passionate software developer believe in <h5>"tech for good."</h5>I have done my BCA degree from Guru Gobind Singh Indraprasath University.
-            I am also doing my Master's degree from IGNOU. 
-            </p>
+            
           </div>
         </div>
       </div>
@@ -135,7 +150,6 @@
                 />
                 <div>
                   <h3>HTML</h3>
-                  <p>Experienced</p>
                 </div>
               </article>
               <article>
@@ -146,7 +160,6 @@
                 />
                 <div>
                   <h3>CSS</h3>
-                  <p>Experienced</p>
                 </div>
               </article>
               <article>
@@ -157,7 +170,6 @@
                 />
                 <div>
                   <h3>Chakra UI</h3>
-                  <p>Intermediate</p>
                 </div>
               </article>
               <article>
@@ -168,7 +180,6 @@
                 />
                 <div>
                   <h3>JavaScript</h3>
-                  <p>Intermediate</p>
                 </div>
               </article>
               <article>
@@ -179,7 +190,6 @@
                 />
                 <div>
                   <h3>TypeScript</h3>
-                  <p>Basic</p>
                 </div>
               </article>
               <article>
@@ -190,7 +200,6 @@
                 />
                 <div>
                   <h3>React.js</h3>
-                  <p>Intermediate</p>
                 </div>
               </article>
               <article>
@@ -200,8 +209,7 @@
                   class="icon"
                 />
                 <div>
-                  <h3>Java</h3>
-                  <p>basic</p>
+                  <h3>Ant Design</h3>
                 </div>
               </article>
               <article>
@@ -212,7 +220,6 @@
                 />
                 <div>
                   <h3>Next.js</h3>
-                  <p>Intermediate</p>
                 </div>
               </article>
             </div>
@@ -228,7 +235,6 @@
                 />
                 <div>
                   <h3>MongoDB</h3>
-                  <p>Intermediate</p>
                 </div>
               </article>
               <article>
@@ -239,7 +245,6 @@
                 />
                 <div>
                   <h3>Node JS</h3>
-                  <p>Intermediate</p>
                 </div>
               </article>
               <article>
@@ -250,7 +255,6 @@
                 />
                 <div>
                   <h3>Express JS</h3>
-                  <p>Intermediate</p>
                 </div>
               </article>
               <article>
@@ -261,7 +265,6 @@
                 />
                 <div>
                   <h3>Git</h3>
-                  <p>Intermediate</p>
                 </div>
               </article>
             </div>
@@ -310,7 +313,7 @@
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https:https://github.com/Rishahum/Dashboard'"
+                onclick="location.href='https://github.com/Rishahum/Dashboard'"
               >
                 Github
               </button>
@@ -336,24 +339,7 @@
             </div>
 
         </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img
-              src="./assets/movies.png"
-              alt="Project 2"
-              class="project-img"
-            />
-          </div>
-          <h2 class="experience-sub-title project-title">Movies App</h2>
-          <div class="btn-container">
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https:https://github.com/Rishahum/movies'"
-            >
-              Github
-            </button>
-          </div>
-      </div>
+
       </div>
       <img
         src="./assets/arrow.png"
@@ -372,15 +358,23 @@
             alt="Email icon"
             class="icon contact-icon email-icon"
           />
-          <p><a href="mailto:rishasinha07@gmail.com">rishasinha07@gmail.com</a></p>
+          <p><a class="mail" href="mailto:rishasinha07@gmail.com">rishasinha07@gmail.com</a></p>
         </div>
         <div class="contact-info-container">
+
           <img
             src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
+            alt="My LinkedIn profile"
+            class="linkedin"
           />
-          <p><a href="https://www.linkedin.com/in/risha-sinha-782538221/">LinkedIn</a></p>
+
+           <img
+            src="./assets/linkedindark.png"
+            alt="My LinkedIn profile"
+            class="linkedin_dark"
+          />
+          
+          <p><a class="linkedin_string" href="https://www.linkedin.com/in/risha-sinha-782538221/">LinkedIn</a></p>
         </div>
       </div>
     </section>
