@@ -233,7 +233,9 @@ section {
 .github_dark_icon{
   display: none;
 }
-
+.experience_dark_icon{
+  display: none;
+}
 
 .icon {
   cursor: pointer;
@@ -325,6 +327,8 @@ section {
 }
 
 .details-container {
+  display: flex;
+  flex-direction: column;
   padding: 1.5rem;
   flex: 1;
   background: white;
@@ -332,6 +336,7 @@ section {
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
+  align-items: center;
 }
 
 .section-container {
@@ -450,6 +455,10 @@ article .icon {
 
 .email-icon {
   height: 2.5rem;
+}
+.experience_icon{
+  height: 3rem;
+  
 }
 
 /* FOOTER SECTION */

@@ -51,6 +51,15 @@ body.dark-mode .github_dark_icon{
   display: flex;
   height: 3rem;
 }
+body.dark-mode .experience_dark_icon{
+  display: flex;
+  height: 3rem;
+  width: 3rem;
+  /* margin-left: 2rem; */
+}
+body.dark-mode .experience_icon{
+  display: none;
+}
 
 body.dark-mode .linkedin{
   display: none;
