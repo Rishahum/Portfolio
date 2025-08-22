@@ -2,6 +2,7 @@
 body.dark-mode {
   background-color: #121212;
   color: #f0f0f0;
+  background: black;
 }
 
 body.dark-mode a {
@@ -60,9 +61,18 @@ body.dark-mode .experience_dark_icon{
 body.dark-mode .experience_icon{
   display: none;
 }
+body.dark-mode .mail-icon{
+  display: none;
+  
+}
 
 body.dark-mode .linkedin{
   display: none;
+}
+
+body.dark-mode .email_dark_icon{
+  display: flex;
+  height: 3rem;
 }
 
 body.dark-mode .linkedin_dark{

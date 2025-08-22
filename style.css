@@ -9,7 +9,23 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #a4fba4;
+  background: #a8ff78;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #78ffd6, #a8ff78); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+#desktop-nav {
+  position: sticky;   /* stays visible while scrolling */
+  top: 0;
+  z-index: 1000;      /* always on top */
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 4rem;
+  
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* subtle depth */
+  backdrop-filter: blur(8px); /* glass effect (optional) */
 }
 
 html {
@@ -37,7 +53,7 @@ nav,
 nav {
   justify-content: space-around;
   align-items: center;
-  height: 17vh;
+  height: 15vh;
 }
 
 .nav-links {
@@ -236,6 +252,9 @@ section {
 .experience_dark_icon{
   display: none;
 }
+.email_dark_icon{
+  display: none;
+}
 
 .icon {
   cursor: pointer;
@@ -331,12 +350,23 @@ section {
   flex-direction: column;
   padding: 1.5rem;
   flex: 1;
+  /* background: rgb(197, 195, 195); */
   background: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
   align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.details-container:hover {
+  z-index: 10; /* higher so it stays above siblings */
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  background-color: whitesmoke;
 }
 
 .section-container {
