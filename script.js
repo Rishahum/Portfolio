@@ -121,7 +121,7 @@ const revealObserver = new IntersectionObserver((entries) => {
 document.querySelectorAll(".reveal").forEach((el) => revealObserver.observe(el));
 
 // ── Typing animation ──────────────────────────────────────────────────────────
-const roles = ["Frontend Developer", "React Specialist", "Problem Solver"];
+const roles = ["Software Developer", "React Specialist", "Problem Solver"];
 let roleIdx = 0, charIdx = 0, deleting = false;
 const typingEl = document.querySelector(".typing-text");
 
